@@ -13,6 +13,8 @@ function shoppingList() {
 function addItem(e) {
   // Prevent default submit behavior
   e.preventDefault();
+  // Clear input field
+  $('#shopping-list-entry').val('');
   // Get value entered in shopping-list-entry field
   const itemAdded = $("#js-shopping-list-form")
     .find('input[name="shopping-list-entry"]')
